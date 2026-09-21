@@ -13,4 +13,9 @@ public class StringSumTest {
         StringSum stringSum = new StringSum();
         assertEquals("1", stringSum.sum("1", ""));
     }
+    @Test
+    void sum_twoNumbers_returnsSum(){
+        StringSum stringSum = new StringSum();
+        assertEquals("3", stringSum.sum("1", "2"));
+    }
 }
