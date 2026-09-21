@@ -8,4 +8,9 @@ public class StringSumTest {
         StringSum stringSum = new StringSum();
         assertEquals("0", stringSum.sum("", ""));
     }
+    @Test 
+    void sum_oneNumberAndEmptyString_returnsTheNumber() {
+        StringSum stringSum = new StringSum();
+        assertEquals("1", stringSum.sum("1", ""));
+    }
 }
