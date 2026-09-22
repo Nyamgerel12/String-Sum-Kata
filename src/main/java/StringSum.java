@@ -5,7 +5,7 @@ public class StringSum {
     private int parseNumber(String s) {
         try {
             int value = Integer.parseInt(s);
-            return value >= 0 ? value : 0;
+            return Math.max(value, 0);
         } catch (NumberFormatException e) {
             return 0;
         }
