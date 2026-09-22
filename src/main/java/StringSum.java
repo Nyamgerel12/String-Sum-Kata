@@ -3,9 +3,11 @@ public class StringSum {
        return String.valueOf(parseNumber(num1) + parseNumber(num2));
     }
     private int parseNumber(String s) {
-        if (s.isEmpty()) {
+        try {
+            int value = Integer.parseInt(s);
+            return value >= 0 ? value : 0;
+        } catch (NumberFormatException e) {
             return 0;
         }
-        return Integer.parseInt(s); 
     }
 }
