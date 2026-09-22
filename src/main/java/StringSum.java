@@ -1,7 +1,11 @@
 public class StringSum {
     public String sum(String num1, String num2) {
-       int n1 = num1.isEmpty() ? 0 : Integer.parseInt(num1);
-       int n2 = num2.isEmpty() ? 0 : Integer.parseInt(num2);
-       return String.valueOf(n1 + n2);
+       return String.valueOf(parseNumber(num1) + parseNumber(num2));
+    }
+    private int parseNumber(String s) {
+        if (s.isEmpty()) {
+            return 0;
+        }
+        return Integer.parseInt(s); 
     }
 }
