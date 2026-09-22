@@ -17,5 +17,11 @@ public class StringSumTest {
     void sum_twoNumbers_returnsSum(){
         StringSum stringSum = new StringSum();
         assertEquals("3", stringSum.sum("1", "2"));
+
+    }
+    @Test 
+    void sum_notNaturalNumber_treatedAsZero() {
+        StringSum stringSum = new StringSum();
+        assertEquals("5", stringSum.sum("abc", "5"));
     }
 }
